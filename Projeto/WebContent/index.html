@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Adicionar Notícias</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	
+	<div class="container">
+		<h1 class="my-3">RealNews <a href="ManterNoticias.do" class="btn btn-info float-right">Ver notícias</a></h1>
+		<!-- <form action="ManterNoticias.do" method="get" class="float-right">
+	    	<button type="submit" class="btn btn-info">Ver todas as notícias</button>
+	    </form>-->
+		<form action="AdicionarNoticia.do" method="get">
+			<h5 class="mt-5 mb-3">Adicionar Notícia</h5>
+			<div class="form-group">
+	        	<label>Título</label>
+	        	<input type="text" name="titulo" class="form-control" maxlength="126" required />
+		    </div>
+		
+		    <div class="form-group">
+		        <label>Descrição</label>
+		        <textarea class="form-control" name="descricao" rows="3" maxlength="512" required></textarea>
+		    </div>
+		
+		    <div class="form-group">
+		        <label>Texto</label>
+		        <textarea class="form-control" name="texto" rows="3" required></textarea>
+		    </div>
+		    <button type="submit" class="btn btn-success">Criar notícia</button>
+		</form>
+	</div>
+</body>
+</html>
